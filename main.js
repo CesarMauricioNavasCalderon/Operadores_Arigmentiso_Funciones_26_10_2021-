@@ -47,7 +47,7 @@ function multiplicacion ( numero1,numero2,myStyle){
 console.group  ("funcion multiplicacion")
 console.log(`%cEl numero1: N° ${numero1}`, myStyle);
 console.log(`%cEl numero2: N° ${numero2}`, myStyle);
-console.log(`%cResultado de la suma: E° ${resultado3}`, myStyle);
+console.log(`%cResultado de la resta: E° ${resultado3}`, myStyle);
 console.groupEnd();
 }
 
@@ -59,8 +59,37 @@ function division ( numero1,numero2,myStyle) {
 console.group  ("funcion division")
 console.log(`%cEl numero1: N° ${numero1}`, myStyle);
 console.log(`%cEl numero2: N° ${numero2}`, myStyle);
-console.log(`%cResultado de la suma: E° ${resultado4}`, myStyle);
+console.log(`%cResultado de la division: E° ${resultado4}`, myStyle);
 console.groupEnd();
 }
 
 division(85,20,myStyle)
+
+function Elevar(numero1, numero2, myStyle) {
+    let resultado = numero1 ** numero2;
+    console.group("Funcion Elevear");
+        console.log(`%cEl numero1: N° ${numero1}`, myStyle);
+        console.log(`%cEl numero2: N° ${numero2}`, myStyle);
+        console.log(`%cResultado al elevar el numero:  ${resultado}`, myStyle);
+    console.groupEnd();
+}
+
+Elevar(80,20,myStyle);
+
+function Modulo (numero1,numero2,myStyle) {
+let resultadodivision  = numero1 / numero2;
+let  resultadoModulo =  numero1 % numero2;
+        console.group("Funcion modulo");
+        console.log(`%cEl numero1: N° ${numero1}`, myStyle);
+        console.log(`%cEl numero2: N° ${numero2}`, myStyle);
+        console.log(`%cResultado del Modulo:  ${resultadoModulo}`, myStyle);
+      
+        console.group  ("funcion division")
+        console.log(`%cEl numero1: N° ${numero1}`, myStyle);
+        console.log(`%cEl numero2: N° ${numero2}`, myStyle);
+        console.log(`%cResultado de la division:  ${resultadodivision}`, myStyle);
+        console.groupEnd();
+}
+
+Modulo(85,20,myStyle);
+
